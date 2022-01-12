@@ -1,0 +1,20 @@
+.Home {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.Home-image {
+  margin-left: calc(50% - 150px);
+  margin-top: 50px;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.Home-description {
+  margin-top: 100px;
+}

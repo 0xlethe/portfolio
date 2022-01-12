@@ -1,0 +1,91 @@
+div {
+}
+.App {
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  background-color: #ededed;
+  border-radius: 15px;
+  display: flex;
+  border: 1px solid #dedede;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.Left-menu {
+  width: 40%;
+
+  border-right: 1px solid #dedede;
+}
+.Right-menu {
+  width: 100%;
+  position: relative;
+}
+.Button-menu {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 30px;
+  border: 0px;
+}
+.Button {
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  margin-right: 4px;
+  border: 1px solid #dedede;
+}
+
+.Menu-Title {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.Title-menu {
+  padding-top: 20px;
+  height: 40px;
+  border-bottom: 1px solid #dedede;
+}
+.Content {
+  background-color: white;
+  height: calc(100% - 60px);
+  border-bottom-right-radius: 15px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.list {
+  text-align: left;
+  font-weight: bold;
+}
+.list li {
+  font-weight: normal;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
