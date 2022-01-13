@@ -1,11 +1,9 @@
-div {
-}
 .App {
   position: absolute;
   text-align: center;
   width: calc(100% - 2px);
   height: calc(100% - 2px);
-  background-color: #ededed;
+  background-color: #f4f4f4;
   border-radius: 15px;
   display: flex;
   border: 1px solid #dedede;
@@ -15,6 +13,7 @@ div {
   pointer-events: none;
 }
 .Left-menu {
+  position: relative;
   width: 40%;
 
   border-right: 1px solid #dedede;
@@ -31,8 +30,8 @@ div {
   border: 0px;
 }
 .Button {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   border-radius: 14px;
   margin-right: 4px;
   border: 1px solid #dedede;
@@ -47,11 +46,28 @@ div {
   padding-top: 20px;
   height: 40px;
   border-bottom: 1px solid #dedede;
+  font-size: 20px;
+  font-weight: bolder;
 }
 .Content {
   background-color: white;
-  height: calc(100% - 60px);
+  position: relative;
+  height: calc(100% - 80px);
+  overflow-y: auto;
+}
+.Copyright-font {
+  height: 19px;
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+  font-size: 10px;
+  background-color: white;
   border-bottom-right-radius: 15px;
+}
+.Information-Portfolio {
+  position: absolute;
+  width: 100%;
+  font-size: 10px;
+  bottom: 5px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -59,10 +75,18 @@ div {
   }
 }
 
+.footer {
+  width: 100%;
+  height: 50px;
+}
+
 .list {
   text-align: left;
   font-weight: bold;
+  margin-left: 20px;
+  width: calc(38% - 20px);
 }
+
 .list li {
   font-weight: normal;
 }

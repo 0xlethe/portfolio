@@ -7,14 +7,31 @@
 }
 
 .Home-image {
-  margin-left: calc(50% - 150px);
-  margin-top: 50px;
-  height: 300px;
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 30px;
+  margin-left: calc(50% - 200px);
+  margin-top: 100px;
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  background-image: url("https://avatars.githubusercontent.com/u/37437842?s=400&u=6de10945209c715d72c9f3faf0c8939b521df93d&v=4");
 }
 
 .Home-description {
-  margin-top: 100px;
+  margin-top: 75px;
+}
+.Home-description div {
+  margin-top: 10px;
+  word-break: keep-all;
+}
+
+.Home-description:nth-child(2) {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.Home-Contact {
+  margin-top: 50px;
+  font-size: 18px;
+}
+.Home-Contact div {
+  margin-top: 6px;
 }

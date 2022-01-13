@@ -1,0 +1,44 @@
+.Project {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.ProjectItem .Title {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+
+.ProjectItem .Timedate {
+  font-size: 15px;
+  font-weight: normal;
+}
+.ProjectItem .information {
+  font-size: 14px;
+  font-weight: normal;
+  word-break: keep-all;
+}
+.ProjectItem .role {
+  font-size: 14px;
+  font-weight: normal;
+  word-break: keep-all;
+}
+.ProjectItem .Description {
+  font-size: 13px;
+  font-weight: normal;
+  color: #676767;
+}
+.ProjectItem .Print {
+  margin-top: 10px;
+  font-weight: bolder;
+}
+.Project div {
+  margin-top: 5px;
+  width: 90%;
+  left: 5%;
+  position: relative;
+  font-size: 15px;
+}

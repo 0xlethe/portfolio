@@ -1,0 +1,28 @@
+.Stack {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.Interest .Title {
+  margin-top: 30px;
+  font-weight: bolder;
+  font-size: 24px;
+}
+.Interest .Title:first-child {
+  margin-top: 70px;
+}
+
+.Interest div {
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.Interest .sub-Content {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
