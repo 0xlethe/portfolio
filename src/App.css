@@ -18,6 +18,11 @@
   width: 200px;
   min-width: 200px;
   border-right: 1px solid #dedede;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .Right-menu {
   width: calc(100vw - 200px);
@@ -50,6 +55,11 @@
   border-bottom: 1px solid #dedede;
   font-size: 20px;
   font-weight: bolder;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .Content {
   background-color: white;
@@ -64,6 +74,11 @@
   font-size: 10px;
   background-color: white;
   border-bottom-right-radius: 15px;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .Information-Portfolio {
   position: absolute;

@@ -35,6 +35,7 @@ function App() {
     fontWeight: "normal",
     position: "relative",
     marginTop: "2px",
+    cursor: "pointer",
   };
   return (
     <div className="App">
