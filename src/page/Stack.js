@@ -8,35 +8,29 @@ export class Stack extends Component {
   render() {
     return (
       <div className="Stack">
-        <div className="Stack-Title">
+        <div className="title thin large-text grey-text">
           Front-End Engineering
-          <div className="Stack-Content">
-            React, TypeScript, JavaScript, HTML/CSS
-          </div>
         </div>
-        <div className="Stack-Title">
+        <div className="thin normal-text normal-grey-text">
+          React, TypeScript, JavaScript, HTML/CSS
+        </div>
+        <div className="title thin large-text grey-text">
           Back-End Engineering
-          <div className="Stack-Content">
-            JavaScript, TypeScript, JAVA, Spring, Servlet, Node.js, express.js
-          </div>
         </div>
-        <div className="Stack-Title">
-          Dev-Ops
-          <div className="Stack-Content">
-            Nginx, AWS (EC2, S3, Lambda, Api GateWay, etc...)
-          </div>
+        <div className="thin normal-text normal-grey-text">
+          JavaScript, TypeScript, JAVA, Spring, Servlet, Node.js, express.js
         </div>
-        <div className="Stack-Title">
-          DataBase
-          <div className="Stack-Content">MYSQL, MariaDB</div>
+        <div className="title thin large-text grey-text">Dev-Ops</div>
+        <div className="thin normal-text normal-grey-text">
+          Nginx, AWS (EC2, S3, Lambda, Api GateWay, etc...)
         </div>
-        <div className="Stack-Title">
-          Tool
-          <div className="Stack-Content">Git</div>
-        </div>
-        <div className="Stack-Title">
-          Etc
-          <div className="Stack-Content">React Native, Python</div>
+        <div className="title thin large-text grey-text">DataBase</div>
+        <div className="thin normal-text normal-grey-text">MYSQL, MariaDB</div>
+        <div className="title thin large-text grey-text">Tool</div>
+        <div className="thin normal-text normal-grey-text">Git</div>
+        <div className="title thin large-text grey-text">Etc</div>
+        <div className="thin normal-text normal-grey-text">
+          React Native, Python
         </div>
 
         <div className="footer"></div>

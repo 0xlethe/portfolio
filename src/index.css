@@ -21,3 +21,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.xxxlarge-text {
+  font-size: 40px;
+}
+.xxlarge-text {
+  font-size: 30px;
+}
+.xlarge-text {
+  font-size: 24px;
+}
+
+.large-text {
+  font-size: 20px;
+}
+
+.normal-text {
+  font-size: 16px;
+}
+.small-text {
+  font-size: 14px;
+}
+.xsmall-text {
+  font-size: 13px;
+}
+.xxsmall-text {
+  font-size: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.thin {
+  font-weight: lighter;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.red {
+  background-color: rgb(240, 91, 91);
+}
+.yellow {
+  background-color: rgb(244, 183, 51);
+}
+.green {
+  background-color: rgb(76, 207, 61);
+}
+
+.normal-grey-text {
+  color: #616161;
+}
+.grey-text {
+  color: #4a4f59;
+}
+
+.deep-grey-text {
+  color: #343840;
+}
+
+.do-not-copy {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

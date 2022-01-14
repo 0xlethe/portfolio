@@ -6,23 +6,17 @@
   position: absolute;
 }
 
-.Interest .Title {
+.Interest .title {
   margin-top: 30px;
-  font-weight: bolder;
-  font-size: 24px;
 }
-.Interest .Title:first-child {
+.Interest .title:first-child {
   margin-top: 70px;
 }
 
 .Interest div {
-  font-weight: normal;
-  font-size: 14px;
   margin-top: 5px;
 }
 
-.Interest .sub-Content {
+.Interest .content {
   margin-top: 10px;
-  font-weight: bold;
-  font-size: 18px;
 }

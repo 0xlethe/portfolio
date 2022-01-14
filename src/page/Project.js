@@ -5,31 +5,37 @@ export class Project extends Component {
   renderTimeline(content) {
     return (
       <div id={content.id} className="ProjectItem">
-        <div className="Title">{content?.name}</div>
-        <div className="Timedate">{content?.date}</div>
-        <div className="Description">{content?.description}</div>
+        <div className="title bold xlarge-text">{content?.name}</div>
+        <div className="thin small-text grey-text">{content?.date}</div>
+        <div className="thin xsmall-text normal-grey-text">
+          {content?.description}
+        </div>
         {content?.github && (
-          <div className="Github">
+          <div className="thin normal-text">
             <a href={content.github}>Github</a>
           </div>
         )}
         {content?.playstore && (
-          <div>
+          <div className="thin normal-text">
             <a href={content.playstore}>플레이 스토어</a>
           </div>
         )}
         <div>
-          <div className="Print">사용 언어 및 프레임워크</div>
-          <div className="language">{content.language}</div>
-          <div className="Print">프로젝트 상세</div>
+          <div className="print normal large-text">사용 언어 및 프레임워크</div>
+          <div className="thin normal-text deep-grey-text">
+            {content.language}
+          </div>
+          <div className="print normal large-text">프로젝트 상세</div>
           {content?.information?.map((information) => (
-            <div className="information">{information}</div>
+            <div className="thin small-text deep-grey-text">
+              - {information}
+            </div>
           ))}
         </div>
         <div>
-          <div className="Print">역할 및 성과</div>
+          <div className="print normal large-text">역할 및 성과</div>
           {content?.role?.map((role) => (
-            <div className="role">{role}</div>
+            <div className="thin small-text deep-grey-text">- {role}</div>
           ))}
         </div>
       </div>
@@ -135,7 +141,7 @@ export class Project extends Component {
         ];
     return (
       <div className="Project">
-        <div className="Title">
+        <div className="project-list">
           {renderlist.map((element) => {
             return this.renderTimeline(element);
           })}

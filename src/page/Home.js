@@ -8,12 +8,10 @@ export class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <div className="Home-image"></div>
-        <div className="Home-description">
-          <div style={{ fontSize: 40, fontWeight: "bold" }}>
-            Software Programmer
-          </div>
-          <div>
+        <div className="image"></div>
+        <div className="description">
+          <div className="blod xxlarge-text grey-text">Software Programmer</div>
+          <div className="thin normal-text normal-grey-text">
             <div>
               주도적으로 서비스를 효율적으로 개선하고 개편하고 싶어합니다.
             </div>
@@ -23,7 +21,7 @@ export class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="Home-Contact">
+        <div className="contact normal-text grey-text">
           <div>📞 contact : 010-7551-1006</div>
           <div>📧 email : lecheln00@gmail.com</div>
           <div>
