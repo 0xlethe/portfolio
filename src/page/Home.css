@@ -8,11 +8,10 @@
 
 .image {
   margin-left: calc(50% - 200px);
-  margin-top: 100px;
+  margin-top: 80px;
   height: 400px;
   width: 400px;
   border-radius: 200px;
-  background-image: url("https://avatars.githubusercontent.com/u/37437842?s=400&u=6de10945209c715d72c9f3faf0c8939b521df93d&v=4");
 }
 
 .description {
