@@ -112,6 +112,7 @@ const project = {
       language: "Java Servlet, AWS EC2, AWS RDS, Nginx, JSP, Angularjs",
       information: [
         "업무 관리, 일정관리 서비스 설계 및 개발",
+        "웹훅 연동 개발",
         "기존 서비스 유지보수 및 리팩토링",
       ],
       role: [
