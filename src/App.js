@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Dropdown } from "react-bootstrap";
 import "./App.css";
 import TYPE from "./types";
 import { Home } from "./page/Home";
@@ -9,7 +8,6 @@ import { Career } from "./page/Career";
 import { Project } from "./page/Project";
 function App() {
   const [address, setAddress] = useState(TYPE.HOME);
-  const [selector, setSelector] = useState("0");
 
   const renderContent = () => {
     switch (address) {
@@ -35,69 +33,30 @@ function App() {
   const renderProtfolioList = () => {
     return (
       <div className="thin normal-text normal-grey-text">
-        <Dropdown>
-          <Dropdown.Menu
-            show
-            className="list"
-            style={{ width: "calc(98% - 20px)" }}
-            onChange={(e) => setSelector(e.eventKey)}
-          >
-            <Dropdown.Header
-              className="large-text"
-              style={{ marginBottom: "5px" }}
-            >
+        <details>
+          <summary className="list">
+            <div className="large-text" style={{ marginBottom: "5px" }}>
               Who am I
-            </Dropdown.Header>
-
-            <Dropdown.Item eventKey="2" onClick={() => setAddress(TYPE.HOME)}>
-              - Who am I
-            </Dropdown.Item>
-            <Dropdown.Item
-              eventKey="3"
-              onClick={() => setAddress(TYPE.INTEREST)}
-            >
-              - Interesting
-            </Dropdown.Item>
-            <Dropdown.Item
-              eventKey="4"
-              onClick={() => setAddress(TYPE.STACK)}
-              active={"2" === selector}
-            >
-              - Stack
-            </Dropdown.Item>
-            <Dropdown.Item eventKey="3" onClick={() => setAddress(TYPE.CAREER)}>
-              - Career
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-        <Dropdown>
-          <Dropdown.Menu
-            show
-            className="list"
-            style={{ width: "calc(98% - 20px)", marginTop: "20px" }}
-            onChange={(e) => setSelector(e.eventKey)}
-          >
-            <Dropdown.Header
-              className="large-text"
-              style={{ marginBottom: "5px" }}
-            >
+            </div>
+          </summary>
+          <span onClick={() => setAddress(TYPE.HOME)}>- Who am I</span>
+          <span onClick={() => setAddress(TYPE.INTEREST)}>- Interesting</span>
+          <span onClick={() => setAddress(TYPE.STACK)}>- Stack</span>
+          <span onClick={() => setAddress(TYPE.CAREER)}>- Career</span>
+        </details>
+        <details>
+          <summary className="list">
+            <div className="large-text" style={{ marginBottom: "5px" }}>
               Project
-            </Dropdown.Header>
-            <Dropdown.Item
-              eventKey="2"
-              onClick={() => setAddress(TYPE.COMPANY_PROJECT)}
-            >
-              - Company
-            </Dropdown.Item>
-            <Dropdown.Item
-              eventKey="4"
-              onClick={() => setAddress(TYPE.PERSONAL_PROJECT)}
-              active={"2" === selector}
-            >
-              - Personal
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+            </div>
+          </summary>
+          <span onClick={() => setAddress(TYPE.COMPANY_PROJECT)}>
+            - Company
+          </span>
+          <span onClick={() => setAddress(TYPE.PERSONAL_PROJECT)}>
+            - Personal
+          </span>
+        </details>
       </div>
     );
   };
